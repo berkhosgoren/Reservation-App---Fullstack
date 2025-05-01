@@ -1,0 +1,51 @@
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .p-panel {
+    margin-bottom: 20px;
+  }
+  
+  .p-dialog {
+    width: 60vw;
+  }
+  
+  .field {
+    margin-bottom: 1rem;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-stepper-panel {
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  .error-message {
+    color: red;
+    font-size: 0.875rem; 
+}
+.success-message {
+    color: green;
+    font-size: 0.875rem; 
+}
+  .cancel-message {
+    color: rgb(243, 169, 10); 
+    margin-top: 10px;
+    font-weight: bold; 
+  }
+  .check-reservation-section {
+    margin-top: 20px; 
+  }

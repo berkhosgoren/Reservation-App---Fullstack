@@ -1,0 +1,142 @@
+<div class="container">
+  <!-- Welcome Panel -->
+  <p-panel header="Welcome" [style]="{ width: '100%' }" [class]="'p-mb-4 p-d-flex p-ai-center p-jc-center'">
+    <h1>Choose Your Desired Operation</h1>
+  </p-panel>
+
+  <!-- Container for Buttons -->
+  <div class="button-container">
+    <p-button label="Make Reservation" (click)="openNewReservationDialog()" class="p-button-raised p-button-success"></p-button>
+    <p-button label="Check My Reservation" (click)="openCheckReservationDialog()" class="p-button-raised p-button-info"></p-button>
+  </div>
+  <!-- Reservation Form Panel(Modal)  -->
+  <p-dialog header="Make a Reservation" [(visible)]="displayNewResForm" [modal]="true" [responsive]="true" (onHide)="closeDialogs()">
+    <p-stepper *ngIf="displayNewResForm">
+    <p-stepperPanel header="Enter Reservation Details">
+        <ng-template pTemplate="content" let-nextCallback="nextCallback">
+            <div class="flex flex-column h-12rem">
+                <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+                    <div class="flex flex-column gap-2 mx-auto" style="max-width: 24rem">
+                        <div class="text-center mt-3 mb-3 text-xl font-semibold">Enter Reservation Details</div>
+                        <div class="field p-fluid">
+                            <label for="name">Name</label>
+                            <input [(ngModel)]="reservation.name" pInputText id="name" placeholder="Name" required />
+                            <div *ngIf="!reservation.name" class="error-message">Name is required.</div>
+                        </div>
+                        <div class="field p-fluid">
+                            <label for="surname">Surname</label>
+                            <input [(ngModel)]="reservation.surname" pInputText id="surname" placeholder="Surname" required />
+                            <div *ngIf="!reservation.surname" class="error-message">Surname is required.</div>
+                        </div>
+                        <div class="field p-fluid">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input [(ngModel)]="reservation.phoneNumber" pInputText id="phoneNumber" placeholder="Phone Number" required pattern="^\\+?[1-9]\\d{1,14}$" />
+                            <div *ngIf="!isValidPhoneNumber()" class="error-message">Invalid phone number format.</div>
+                        </div>
+                        <div class="field p-fluid">
+                            <label for="resCause">Reservation Cause</label>
+                            <input [(ngModel)]="reservation.resCause" pInputText id="resCause" placeholder="Reservation Cause" required />
+                            <div *ngIf="!reservation.resCause" class="error-message">Reservation cause is required.</div>
+                        </div>
+                        <div class="field p-fluid">
+                            <label for="resDate">Reservation Date</label>
+                            <input [(ngModel)]="reservation.resDate" pInputText id="resDate" type="date" placeholder="Reservation Date" required [min]="today" />
+                            <div *ngIf="isPastDate()" class="error-message">Reservation date cannot be in the past.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pt-4 justify-content-end">
+                <p-button 
+                    label="Next" 
+                    icon="pi pi-arrow-right" 
+                    iconPos="right" 
+                    (onClick)="nextCallback.emit()" 
+                    [disabled]="!isFormValid()"/>
+            </div>
+        </ng-template>
+    </p-stepperPanel>
+    
+    <p-stepperPanel header="Confirm Reservation">
+        <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback">
+            <div class="flex flex-column h-12rem">
+                <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center 
+                            align-items-center font-medium">
+                    <div class="flex flex-column gap-2 mx-auto" style="max-width: 24rem">
+                        <div class="text-center mt-3 mb-3 text-xl font-semibold">Confirm Reservation</div>
+                        <p>Review your details:</p>
+                        <ul>
+                            <li><strong>Name:</strong> {{ reservation.name }}</li>
+                            <li><strong>Surname:</strong> {{ reservation.surname }}</li>
+                            <li><strong>Phone Number:</strong> {{ reservation.phoneNumber }}</li>
+                            <li><strong>Reservation Cause:</strong> {{ reservation.resCause }}</li>
+                            <li><strong>Reservation Date:</strong> {{ reservation.resDate | date }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pt-4 justify-content-between">
+                <p-button 
+                    label="Back" 
+                    icon="pi pi-arrow-left" 
+                    (onClick)="prevCallback.emit()" />
+                <p-button 
+                    label="Next" 
+                    icon="pi pi-arrow-right" 
+                    iconPos="right" 
+                    (onClick)="confirmReservation(nextCallback)" />
+            </div>
+        </ng-template>
+    </p-stepperPanel>
+    
+    <p-stepperPanel header="Confirmation">
+      <ng-template pTemplate="content">
+          <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
+              <div class="text-center mt-3 mb-3 text-2xl font-semibold text-green-500">
+                  Reservation Confirmed
+              </div>
+              <p class="text-xl text-green-500">
+                  Thank you! Your reservation has been confirmed. 
+                  <strong>Confirmation ID: {{ reservation.confirmationId }}</strong>
+              </p>
+          </div>
+      </ng-template>
+  </p-stepperPanel>
+</p-stepper>
+</p-dialog>
+<!-- Check Reservation Panel(Modal)  -->
+<p-dialog header="Check My Reservation" [(visible)]="displayCheckResForm" [modal]="true" [responsive]="true" (onHide)="closeDialogs()">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="confirmationId">Confirmation ID</label>
+        <input id="confirmationId" type="text" pInputText [(ngModel)]="confirmationId" />
+      </div>
+      <p-button label="Check" (click)="checkReservation()" class="p-button-primary"></p-button>
+    </div>
+  
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <div *ngIf="cancelMessage" class="success-message">{{ cancelMessage }}</div>
+  
+    <div *ngIf="reservationDetails">
+      <h3>Reservation Details:</h3>
+      <ul>
+        <li><strong>Name:</strong> {{ reservationDetails.name }}</li>
+        <li><strong>Surname:</strong> {{ reservationDetails.surname }}</li>
+        <li><strong>Phone Number:</strong> {{ reservationDetails.phoneNumber }}</li>
+        <li><strong>Reservation Cause:</strong> {{ reservationDetails.resCause }}</li>
+        <li><strong>Reservation Date:</strong> {{ reservationDetails.resDate | date }}</li>
+        <li><strong>Confirmation ID:</strong> {{ reservationDetails.confirmationId }}</li>
+      </ul>
+      <p-button label="Cancel Reservation" (click)="confirmCancellationDialog()" class="p-button-raised p-button-danger"></p-button>
+    
+      <p-confirmDialog 
+    header="Confirmation" 
+    icon="pi pi-exclamation-triangle" 
+    [visible]="confirmDialogVisible" 
+    (onHide)="confirmDialogVisible = false">
+    <p-footer>
+        <p-button label="Yes" icon="pi pi-check" (click)="cancelReservation()"></p-button>
+        <p-button label="No" icon="pi pi-times" (click)="confirmDialogVisible = false;"></p-button>
+    </p-footer>
+</p-confirmDialog>
+</div>

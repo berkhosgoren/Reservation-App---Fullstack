@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\migrations\\20240926084504_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\migrations\\20240926084504_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\migrations\\20240926113901_confirmationidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\migrations\\20240926113901_confirmationidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\controllers\\resinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\controllers\\resinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\entities\\resinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\entities\\resinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\berk\\desktop\\reservation app fullstack\\reservationapi\\reservationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3B0576A-3CBB-42FA-900B-15D93A78FFA1}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Program.cs",
+              "RelativeToolTip": "ReservationAPI\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T08:23:41.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Data\\DataContext.cs",
+              "RelativeToolTip": "ReservationAPI\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T08:17:49.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResInfoController.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Controllers\\ResInfoController.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Controllers\\ResInfoController.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Controllers\\ResInfoController.cs",
+              "RelativeToolTip": "ReservationAPI\\Controllers\\ResInfoController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAA4wHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:57:45.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240926084504_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Migrations\\20240926084504_Initial.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Migrations\\20240926084504_Initial.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Migrations\\20240926084504_Initial.cs",
+              "RelativeToolTip": "ReservationAPI\\Migrations\\20240926084504_Initial.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T08:45:05.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240926113901_confirmationIdAd.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Migrations\\20240926113901_confirmationIdAd.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Migrations\\20240926113901_confirmationIdAd.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Migrations\\20240926113901_confirmationIdAd.cs",
+              "RelativeToolTip": "ReservationAPI\\Migrations\\20240926113901_confirmationIdAd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:39:01.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Entities\\ResInfo.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Entities\\ResInfo.cs",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\Entities\\ResInfo.cs",
+              "RelativeToolTip": "ReservationAPI\\Entities\\ResInfo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:50:23.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ReservationAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Berk\\Desktop\\Reservation App Fullstack\\ReservationAPI\\ReservationAPI\\appsettings.json",
+              "RelativeToolTip": "ReservationAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-26T08:09:16.037Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

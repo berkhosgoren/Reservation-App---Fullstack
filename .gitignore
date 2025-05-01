@@ -1,0 +1,16 @@
+# Backend (.NET)
+ReservationAPI/**/bin/
+ReservationAPI/**/obj/
+ReservationAPI/**/*.user
+ReservationAPI/**/*.suo
+ReservationAPI/**/appsettings.Development.json
+ReservationAPI/**/appsettings.json
+
+# Frontend (Angular)
+ReservationFront/node_modules/
+ReservationFront/dist/
+ReservationFront/.angular/
+
+# Common
+.env
+Uploads/
