@@ -34,7 +34,6 @@ To practice full-stack development with:
 
 ---
 
-
 ## ⚙️ How to Run
 
 ### 🔧 Backend
@@ -44,19 +43,21 @@ cd ReservationAPI
 dotnet restore
 dotnet ef database update
 dotnet run
+```
 
 ---
 
-### 🔧 Frontend
+### 💻 Frontend
 
 ```bash
 cd ReservationFront
 npm install
 ng serve
+```
 
 ---
 
-#Notes
-*appsettings.json and Development.json are ignored via .gitignore
+### 🛡 Notes
 
-*CORS is allowed for http://localhost:4200 in backend
+- \`appsettings.json\` and \`appsettings.Development.json\` are ignored via \`.gitignore\`
+- CORS is allowed for \`http://localhost:4200\` in backend
