@@ -45,6 +45,8 @@ dotnet restore
 dotnet ef database update
 dotnet run
 
+---
+
 ### 🔧 Frontend
 
 ```bash
@@ -52,7 +54,7 @@ cd ReservationFront
 npm install
 ng serve
 
-
+---
 
 #Notes
 *appsettings.json and Development.json are ignored via .gitignore
